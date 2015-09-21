@@ -8,7 +8,7 @@ set -e
 #set -x
 
 # move all vendor binaries to something that Meteor will ignore
-mv vendor .vendor
+mv /app/vendor /app/.vendor
 
 #Load config vars into environment (from https://devcenter.heroku.com/articles/buildpack-api)
 export_env_dir() {
